@@ -85,3 +85,33 @@ _MyClassList.prototype.toggle = function(className) {
 	}
 
 };
+
+/*
+ * $的封装函数
+ * 用于获取元素
+ * */
+function $(selector,content){
+	var firstChar = selector.charAt(0);
+	content = content || document;
+	if ( firstChar === '#' ){                                // 通过ID来获取时
+		return document.getElementById(selector.slice(1));
+	}
+	else if ( firstChar === '.' ){							 // 通过class来获取时
+		var allElement = document.getElementsByTagName('*'); // 首先获取所有元素
+		var arr =[];										 // 定义一个数组用来储存获取到的元素
+		for ( var i = 0; i < allElement.length ; i++ ){
+			var classname = allElement[i].className;         // 循环所有, 并获取其className
+			var classArr = classname.split(' ');			 // 把该元素的 className 解析为数组 用空格分开
+			for( var j = 0; j < classArr.length ; j++ ){     // 循环该元素的className 每一项 如果有一项与传入的 selector.slice(1) 相同
+				if( classArr[j] == selector.slice(1) ){		 // 则表示该元素有其 class 并把它放入数组( arr ) 中
+					arr.push( allElement[i] );
+					break;                                   // 同时停止该循环
+				}
+			}
+		};
+		return arr;                                          //最后输出该数组中的所有元素;
+	}else{
+		return content.getElementsByTagName(selector);
+	}
+};
+
