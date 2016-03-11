@@ -89,3 +89,159 @@ html,body {
 	height: 838px;
 	border: 1px solid #e8e8e8;
 }
+.up-nav {
+	position: relative;
+	width: 836px;
+	height: 48px;
+	margin: 0 auto;
+	border-bottom: 1px solid #e8e8e8;
+	overflow: hidden;
+}
+.up-nav-left,.up-nav-right {
+	width: 27px;
+	height: 27px;
+	margin-top: 9px;
+	border: 1px solid #e8e8e8;
+	line-height: 26px;
+	text-align: center;
+	color: #3f3f3f;
+	font-size: 24px;
+	cursor: pointer;
+}
+.up-nav-left {
+	float: left;
+}
+.up-nav-right {
+	float: right;
+}
+.up-nav ul {
+	width: 733px;
+	height: 48px;
+	margin: 0 auto;
+}
+.up-nav-li {
+	float: left;
+	width: 243px;
+	margin: 10px 0 10px 0;
+	line-height: 28px;
+	height: 28px;
+	color: #c4c4c4;
+	font-size: 16px;
+	cursor: pointer;
+}
+.up-nav-li:nth-child(2) {
+	border-left: 2px solid #e8e8e8;
+	border-right: 2px solid #e8e8e8;
+	text-align: center;
+}
+.up-nav-li:nth-child(1) {
+	text-align: right;
+	margin-right: 35px;
+	width: 208px;
+}
+.up-nav-li:nth-child(3) {
+	text-align: left;
+	margin-left: 35px;
+	width: 208px;
+}
+.up-nav-active {
+	color: #3f3f3f;
+}
+.content-up-wrap {
+	width: 856px;
+	height: 788px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.content-up-block {
+	width: 856px;
+	height: 744px;
+	overflow: hidden;
+}
+.sec-content {
+	display: none;
+}
+.thir-content {
+	display: none;
+}
+.content-up-block .col {
+	width: 194px;
+	padding: 0 10px 0 10px;
+	float: left;
+}
+.col-block {
+	width: 194px;
+	height: 350px;
+	padding-top: 22px;
+}
+.col-block-img {
+	width: 194px;
+	height: 236px;
+	background-color: #f7f7f7;
+	position: relative;
+}
+.col-block-img img {
+	width: 194px;
+	height: 236px;
+}
+.col-block .row1,.col-block .row2,.col-block .row3 {
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+}
+.col-block .row1 {
+	color: #b8b8b8;
+	font-size: 12px;
+}
+.col-block .row2 {
+	color: #3f3f3f;
+	font-size: 12px;
+}
+.col-block .row3 {
+	color: #4a4a4a;
+	font-size: 14px;
+}
+.col-block .row4{
+	text-align: center;
+	margin-top: 7px;
+}
+.col-block .row4 i {
+	color: #f8d73f;
+	font-size: 12px;
+}
+.col-block-img ul{
+	width: 25px;
+	position: absolute;
+	top: 60px;
+	right: 3px;
+	display: none;
+	background-color: #fff;
+}
+.col-block-img ul li {
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	border-bottom: 1px solid #e8e8e8;
+	cursor: pointer;
+	color: #c4c4c4;
+
+}
+.col-block-img:hover ul {
+	display: block;
+}
+.col-block-img ul li:hover {
+	color: #91d4c2;
+}
+
+/*内容中间的图片*/
+.content-middle {
+	margin-top: 30px;
+	width: 878px;
+	height: 150px;
+	background-color: #f9e37d;
+}
+.content-middle img {
+	width: 878px;
+	height: 150px;
+}
