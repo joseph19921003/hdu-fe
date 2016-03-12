@@ -115,3 +115,13 @@ function $(selector,content){
 	}
 };
 
+
+/*通过childNodes获取节点时去掉换行所占的节点*/
+function del_ff(elem){
+	var elem_child = elem.childNodes;
+		for(var i=0; i<elem_child.length;i++){
+		if(elem_child[i].nodeName == "#text" && !/\s/.test(elem_child.nodeValue)){
+			elem.removeChild(elem_child[i])
+		}
+	}
+}
