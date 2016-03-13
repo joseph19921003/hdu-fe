@@ -13,10 +13,6 @@ html,body {
 	height: 45px;
 }
 
-.pic_turn {
-	height: 302px;	
-}
-
 /*自动轮播部分*/
 @font-face {
 	font-family:'Lato';
@@ -599,9 +595,6 @@ html,body {
 	cursor: pointer;
 	font-weight: bold;
 }
-
-
-
 
 
 
