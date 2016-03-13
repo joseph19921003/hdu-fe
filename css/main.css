@@ -22,6 +22,10 @@ html,body {
 	font-family:'Lato';
 	src: url('../css/font-awesome/fonts/fontawesome-webfont.ttf');
 }
+@font-face {
+	font-family:'Raleway';
+	src: url('../css/font-awesome/fonts/fontawesome-webfont.ttf');
+}
 .pic_turn {
 	position: relative;
 	height: 600px;
@@ -41,11 +45,11 @@ html,body {
 	filter: Alpha(opacity=0);
 }
 #tp-bgimg1 {
-	background-image: url(../images/1.jpg);
+	background-image: url(http://7xrnph.com1.z0.glb.clouddn.com/pic_turn_bg1.jpg);
 	background-position: 100% 50%;
 }
 #tp-bgimg2 {
-	background-image: url(../images/2.jpg);
+	background-image: url(http://7xrnph.com1.z0.glb.clouddn.com/pic_turn_bg2.jpg);
 	background-position: 50% 50%;
 }
 .tp-text-wrapper {
