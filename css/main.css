@@ -704,6 +704,12 @@ a {
 .photos-container img {
 	width: 155px;
 	height: 155px;
+	opacity: .8;
+	filter: 'alpha(opacity=80)';
+}
+.photos-container img:hover {
+	opacity: 1;
+	filter: 'alpha(opacity=100)';
 }
 .item {
 	position: relative;
