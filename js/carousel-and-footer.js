@@ -1,7 +1,7 @@
 /**
  * Created by SunshineLXH on 2016/3/13.
  */
-window.onload = function(){
+window.onload = function() {
     //获取元素
     var tpBgimg = $(".tp-bgimg", $("#tp-slideshow")),
         tpText  = $(".tp-text"),
