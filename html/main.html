@@ -10,12 +10,40 @@
 	<link rel="stylesheet" href="../css/font-awesome/css/font-awesome.css">
 	<script type="text/javascript" src="../js/common.js"></script>
 	<script type="text/javascript" src="../js/content-block.js"></script>
+	<script type="text/javascript" src="../js/carousel-and-footer.js"></script>
 </head>
 <body>
 	<div class="wrap">
 		<header id="header">这是头部</header>
 		<nav id="nav">这是导航</nav>
-		<div class="pic_turn">图片轮播</div>
+		<div class="pic_turn">
+			<div id="tp-slideshow">
+				<div class="tp-bgimg active" id="tp-bgimg1">
+					<div class="tp-text-wrapper">
+						<div class="tp-text" id="tp-text-left">
+							<div class="tp-splitted tp-top"></div>
+							<div class="tp-splitted tp-middle"></div>
+							<p class="tp-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu odio non justo euismod congue ut nec orci.</p>
+							<span class="viewMore">VIEW MORE</span>&nbsp&nbsp<span class="buyNow">BUY NOW</span>
+						</div>
+					</div>
+				</div>
+				<div class="tp-bgimg" id="tp-bgimg2">
+					<div class="tp-text-wrapper">
+						<div class="tp-text" id="tp-text-right">
+							<div class="tp-splitted tp-top"></div>
+							<div class="tp-splitted tp-middle"></div>
+							<p class="tp-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu odio non justo euismod congue ut nec orci.</p>
+							<span class="viewMore">VIEW MORE</span>&nbsp&nbsp<span class="buyNow">BUY NOW</span>
+						</div>
+					</div>
+				</div>
+				<div class="arrow">
+					<span id="tp-leftarrow"><</span>
+					<span id="tp-rightarrow">></span>
+				</div>
+			</div>
+		</div>
 		<div class="main">
 		    <div class="bs">
 		    	<div class="bs-col">
@@ -522,7 +550,95 @@
 			    </div>
 			</div>
 		</div>
-		<footer id="footer">这是页脚</footer>
+		<footer id="footer">
+			<div class="footer-container">
+				<div class="first-footer">
+					<div class="first-footer-wrapper">
+						<div id="authors">
+							<h3 class="h3">AUTHORS</h3>
+							<ul>
+								<li><span>齐益炎</span> <br /><a href="https://github.com/joseph19921003/#" target="_blank" class="aColor" title="follow me on github">Happiness is about having each tiny wish come ture.</a></li>
+								<li><span>邹雅文</span> <br /><a href="https://github.com/zyw0228/#" target="_blank" title="follow me on github" class="aColor">My interest is in the future because I am going to spend the rest of my life there.</a></li>
+								<li><span>王胜楠</span> <br /><a href="" target="_blank" title="follow me on github" class="aColor">Whatever is worth doing at all is worth doing well.</a></li>
+								<li><span>李晓会</span> <br /><a href="http://github.com/SunshineLXH/#" target="_blank" title="follow me on github" class="aColor">Every hour of lost time is a chance of future misfortune.</a></li>
+							</ul>
+						</div>
+						<div class="photos" id="photos">
+							<h3 class="h3">PHOTOS</h3>
+							<div class="photos-container">
+								<div class="item">
+									<a><img src="http://7xrnph.com1.z0.glb.clouddn.com/qyy.jpg" title="齐益炎" /></a>
+								</div>
+								<div class="item">
+									<a><img src="http://7xrnph.com1.z0.glb.clouddn.com/zyw.jpg" title="邹雅文" /></a>
+								</div>
+								<div class="item">
+									<a><img src="http://7xrnph.com1.z0.glb.clouddn.com/wsn.jpg" title="王胜楠" /></a>
+								</div>
+								<div class="item">
+									<a><img src="http://7xrnph.com1.z0.glb.clouddn.com/lxh.jpg" title="李晓会" /></a>
+								</div>
+							</div>
+						</div>
+						<div id="usefulLinks">
+							<h3 class="h3">USEFUL LINKS</h3>
+							<div>
+								<ul class="list-icons">
+									<li>
+										<a class="facebook" href="http://www.facebook.com/#" target="_blank" title="">
+											<i class="fa fa-facebook"></i>
+											<span class="ts-tooltip social-tooltip"></span>
+										</a>
+									</li>
+									<li>
+										<a class="twitter" href="http://twitter.com/#" target="_blank" title="">
+											<i class="fa fa-twitter"></i>
+											<span class=""></span>
+										</a>
+									</li>
+									<li>
+										<a class="google-plus" href="https://plus.google.com/#" target="_blank" title="">
+											<i class="fa fa-google-plus"></i>
+											<span class=""></span>
+										</a>
+									</li>
+									<li>
+										<a class="github" href="http://www.github.com/#" target="_blank" title="">
+											<i class="fa fa-github"></i>
+											<span class=""></span>
+										</a>
+									</li>
+									<li>
+										<a class="youtube" href="http://www.youtube.com/#" target="_blank" title="">
+											<i class="fa fa-youtube"></i>
+											<span class=""></span>
+										</a>
+									</li>
+									<li>
+										<a class="weibo" href="http://www.weibo.com/#" target="_blank" title="">
+											<i class="fa fa-weibo"></i>
+											<span class=""></span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="end-footer">
+					<div class="end-footer-container">
+						<div class="end-footer-wrapper">
+							<div class="line-logo">
+								<span></span><img src="http://7xrnph.com1.z0.glb.clouddn.com/hdu-fe.png" /><span></span>
+							</div>
+						</div>
+						<div class="end-footer-wrapper">
+							<p style="text-align: center;"><small>&copy; 2016 百度前端技术学院 by hdu-fe<small></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</div>
 </body>
 </html>
