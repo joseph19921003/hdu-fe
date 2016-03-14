@@ -13,10 +13,6 @@ html,body {
 	height: 45px;
 }
 
-.pic_turn {
-	height: 302px;	
-}
-
 /*自动轮播部分*/
 @font-face {
 	font-family:'Lato';
@@ -602,9 +598,6 @@ html,body {
 
 
 
-
-
-
 /*footer部分*/
 a {
 	text-decoration: none;
@@ -704,6 +697,12 @@ a {
 .photos-container img {
 	width: 155px;
 	height: 155px;
+	opacity: .8;
+	filter: 'alpha(opacity=80)';
+}
+.photos-container img:hover {
+	opacity: 1;
+	filter: 'alpha(opacity=100)';
 }
 .item {
 	position: relative;

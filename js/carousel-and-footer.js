@@ -151,16 +151,4 @@ window.onload = function(){
             }
         })();
     }
-
-//footer中photos部分，鼠标移入时透明度改变
-    function setOver(obj){
-        obj.style['opacity'] = 1;
-        obj.style['filter'] = 'alpha(opacity=100)';
-    }
-
-    function setOut(obj){
-        obj.style['opacity'] = .8;
-        obj.style['filter'] = 'alpha(opacity=80)';
-    }
-
 }
