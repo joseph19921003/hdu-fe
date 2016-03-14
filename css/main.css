@@ -83,6 +83,9 @@ html,body {
 	font-weight: bold;
 	font-family: Lato;
 }
+.tp-text span:hover {
+	cursor: pointer;
+}
 .viewMore {
 	left: 10px;
 	color: #fff;
@@ -733,7 +736,7 @@ a {
 	float: left;
 	list-style: none;
 }
-.fa {
+.fb {
 	height: 2em;
 	font-size: 3em;
 	overflow: hidden;
@@ -742,7 +745,7 @@ a {
 	text-decoration: none;
 	width: 2em;
 }
-.fa:before, .fa:after {
+.fb:before, .fb:after {
 	left: 0;
 	position: absolute;
 	text-align: center;
@@ -751,24 +754,24 @@ a {
 	top: 50%;
 	width: 100%;
 }
-.fa:before {
+.fb:before {
 	color: white;
 	-webkit-transform: translate3D(0, -50%, 0);
 	-ms-transform: translate3D(0, -50%, 0);
 	transform: translate3D(0, -50%, 0);
 	z-index: 2;
 }
-.fa:after {
+.fb:after {
 	padding-bottom: 25%;
 	padding-top: 300%;
 	top: 0;
 }
-.fa:hover:after {
+.fb:hover:after {
 	-webkit-transform: translate3D(0, -73%, 0);
 	-ms-transform: translate3D(0, -73%, 0);
 	transform: translate3D(0, -73%, 0);
 }
-.fa:hover:before {
+.fb:hover:before {
 	-webkit-transform: translate3D(0, -250%, 0);
 	    -ms-transform: translate3D(0, -250%, 0);
 	        transform: translate3D(0, -250%, 0);

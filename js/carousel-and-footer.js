@@ -12,21 +12,29 @@ window.onload = function(){
         timer   = null,
         n = 1;
 
-//文字块上面字的内容
+    //文字块上面字的内容
     var arr1 = ["SPRING SUMMER 2015", "New Hight Collection"],
         arr2 = ["AUTUMN & SUMMER TRENDING", "Sweet Love Style"];
 
-//初始化
+    //初始化
     if(tpBgimg[0].style.opacity){
         tpBgimg[0].style.opacity = 1;
     }
     else {
         tpBgimg[0].style.filter = "alpha(opacity=100)";
     }
-//显示第一幅图的文字块
-    showSp(0);
+    //显示第一幅图的文字块
+    (function (){
+        showSp(0);
+        setTimeout(function(){
+            n++;
+            fadeOut(tpBgimg[0], 0, 200);
+            showSp(1);
+            fadeIn(tpBgimg[1], 100, 200);
+        }, 1000)
+    })();
 
-//文字块显示函数
+    //文字块显示函数
     function showSp(n){
         //暴力清除所有
         for (var i = 0; i < tpSpTop.length; i++){
@@ -46,10 +54,10 @@ window.onload = function(){
         }
     }
 
-//开启自动轮播
+    //开启自动轮播
     start();
 
-//自动轮播函数
+    //自动轮播函数
     function start(){
         if (timer) return;
         timer = setInterval(function (){
@@ -59,7 +67,7 @@ window.onload = function(){
         }, 3000);
     };
 
-//背景图变换函数
+    //背景图变换函数
     function transform(n){
         //第n张淡入，第n-1张淡出
         fadeIn(tpBgimg[n], 100, 200);
@@ -72,7 +80,7 @@ window.onload = function(){
         }
     };
 
-//点击左边“<”时
+    //点击左边“<”时
     tpArrow[0].onclick = function (){
         //第n张淡出，第n-1张淡入
         fadeOut(tpBgimg[n], 0, 200);
@@ -82,14 +90,14 @@ window.onload = function(){
         showSp(n);
     };
 
-//点击右边“>”时
+    //点击右边“>”时
     tpArrow[1].onclick = function (){
         //n+1后淡入，前一张淡出
         n = (n < len - 1) ? ++n : 0;
         transform(n);
     };
 
-//鼠标移入左右“<”“>”时clearInterval()
+    //鼠标移入左右“<”“>”时clearInterval()
     tpArrow[0].onmouseover = function (){
         clearInterval(timer);
         timer = null;
@@ -99,7 +107,7 @@ window.onload = function(){
         timer = null;
     };
 
-//鼠标移出左右“<”“>”时start()
+    //鼠标移出左右“<”“>”时start()
     tpArrow[0].onmouseout = function (){
         start();
     };
@@ -107,7 +115,7 @@ window.onload = function(){
         start();
     };
 
-//设置透明度的兼容性代码
+    //设置透明度的兼容性代码
     function setOpacity(ele, opacity){
         //兼容FF/GG/新版本IE
         if(ele.style.opacity != undefined){
@@ -119,7 +127,7 @@ window.onload = function(){
         }
     };
 
-// fadeIn函数
+    // fadeIn函数
     function fadeIn(ele, opacity, speed){
         var speed = speed || 20,
             opacity = opacity || 100,
@@ -135,7 +143,7 @@ window.onload = function(){
         })();
     }
 
-//fadeOut函数
+    //fadeOut函数
     function fadeOut(ele, opacity, speed){
         var speed = speed || 20,
             opacity = opacity || 0,
