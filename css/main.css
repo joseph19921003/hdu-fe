@@ -83,6 +83,9 @@ html,body {
 	font-weight: bold;
 	font-family: Lato;
 }
+.tp-text span:hover {
+	cursor: pointer;
+}
 .viewMore {
 	left: 10px;
 	color: #fff;
