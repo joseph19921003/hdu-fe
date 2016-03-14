@@ -736,7 +736,7 @@ a {
 	float: left;
 	list-style: none;
 }
-.fb {
+.fa-icon {
 	height: 2em;
 	font-size: 3em;
 	overflow: hidden;
@@ -745,7 +745,7 @@ a {
 	text-decoration: none;
 	width: 2em;
 }
-.fb:before, .fb:after {
+.fa-icon:before, .fa-icon:after {
 	left: 0;
 	position: absolute;
 	text-align: center;
@@ -754,24 +754,24 @@ a {
 	top: 50%;
 	width: 100%;
 }
-.fb:before {
+.fa-icon:before {
 	color: white;
 	-webkit-transform: translate3D(0, -50%, 0);
 	-ms-transform: translate3D(0, -50%, 0);
 	transform: translate3D(0, -50%, 0);
 	z-index: 2;
 }
-.fb:after {
+.fa-icon:after {
 	padding-bottom: 25%;
 	padding-top: 300%;
 	top: 0;
 }
-.fb:hover:after {
+.fa-icon:hover:after {
 	-webkit-transform: translate3D(0, -73%, 0);
 	-ms-transform: translate3D(0, -73%, 0);
 	transform: translate3D(0, -73%, 0);
 }
-.fb:hover:before {
+.fa-icon:hover:before {
 	-webkit-transform: translate3D(0, -250%, 0);
 	    -ms-transform: translate3D(0, -250%, 0);
 	        transform: translate3D(0, -250%, 0);
